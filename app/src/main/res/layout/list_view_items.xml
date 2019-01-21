@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/listBackground">
+
+    <ImageView
+        android:id="@+id/timg"
+        android:layout_width="70dp"
+        android:layout_height="73dp"
+        android:background="@drawable/timg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/record_name"
+        android:layout_width="311dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_span="2"
+        android:text="12月15日 17时27分23秒.wav"
+        android:textSize="20dp"
+        android:layout_toRightOf="@id/timg" />
+
+    <TextView
+        android:id="@+id/record_length"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_span="1"
+        android:gravity="center"
+        android:text="00:00:13"
+        android:textSize="16dp"
+        android:layout_below="@id/record_name"
+        android:layout_toRightOf="@id/timg"/>
+
+    <TextView
+        android:id="@+id/record_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_span="1"
+        android:gravity="center"
+        android:text="2018-12-12 23:14:00"
+        android:textSize="16dp"
+        android:layout_below="@id/record_name"
+        android:layout_toRightOf="@id/record_length" />
+</RelativeLayout>
